@@ -59,16 +59,10 @@ License: Creative Commons Attribution 3.0 Unported
                     <div class="collapse navbar-collapse collapse-pdng" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav nav-font">
                             <li>
-                                <a href="/mangas">Sienen</a>
+                                <a href="/mangas">Mangas</a>
                             </li>
                             <li>
-                                <a href="/mangas">Shônen</a>
-                            </li>
-                            <li>
-                                <a href="/mangas">Shôjo</a>
-                            </li>
-                            <li>
-                                <a href="/mangas">Josei</a>
+                                <a href="/volumes">Volumes</a>
                             </li>
                             <li><a href="/contact">Contact</a></li>
                             <div class="clearfix"></div>
@@ -91,12 +85,10 @@ License: Creative Commons Attribution 3.0 Unported
     <div class="footer-grid">
         <div class="container">
             <div class="col-md-2 re-ft-grd">
-                <h3>Categories</h3>
+                <h3>Shop</h3>
                 <ul class="categories">
-                    <li><a href="/mangas">Sienen</a></li>
-                    <li><a href="/mangas">Shônen</a></li>
-                    <li><a href="/mangas">Shôjo</a></li>
-                    <li><a href="/mangas">Josei</a></li>
+                    <li><a href="/mangas">Mangas</a></li>
+                    <li><a href="/volumes">Volumes</a></li>
                 </ul>
             </div>
             <div class="col-md-2 re-ft-grd">

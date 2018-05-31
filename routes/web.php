@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/mangas', 'MangaController@index');
-Route::get('/manga/{id}', 'VolumeController@show')->where('id', '[0-9]+');
+Route::get('/manga/{id}', 'MangaController@show')->where('id', '[0-9]+');
 
 Route::get('/volumes', 'VolumeController@index');
 Route::get('/volume/{id}', 'VolumeController@show')->where('id', '[0-9]+');
