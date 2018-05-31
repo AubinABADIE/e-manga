@@ -35,7 +35,7 @@ License: Creative Commons Attribution 3.0 Unported
         <div class="container">
             <div class="header-top">
                 <div class="logo">
-                    <a href="/">e-Manga</a>
+                    <a href="/">E-Manga</a>
                 </div>
                 <div class="login-bars">
                     <a class="btn btn-default log-bar" href="/auth/register" role="button">Sign up</a>
@@ -93,16 +93,16 @@ License: Creative Commons Attribution 3.0 Unported
             <div class="col-md-2 re-ft-grd">
                 <h3>Categories</h3>
                 <ul class="categories">
-                    <li><a href="#">Sienen</a></li>
-                    <li><a href="#">Shônen</a></li>
-                    <li><a href="#">Shôjo</a></li>
-                    <li><a href="#">Josei</a></li>
+                    <li><a href="/mangas">Sienen</a></li>
+                    <li><a href="/mangas">Shônen</a></li>
+                    <li><a href="/mangas">Shôjo</a></li>
+                    <li><a href="/mangas">Josei</a></li>
                 </ul>
             </div>
             <div class="col-md-2 re-ft-grd">
                 <h3>Short links</h3>
                 <ul class="shot-links">
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="/contact">Contact us</a></li>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Delivery</a></li>
                     <li><a href="#">Return Policy</a></li>
@@ -121,7 +121,7 @@ License: Creative Commons Attribution 3.0 Unported
             <div class="col-md-2 re-ft-grd">
                 <div class="bt-logo">
                     <div class="logo">
-                        <a href="index.html" class="ft-log">Logo</a>
+                        <a href="/" class="ft-log">Logo</a>
                     </div>
                 </div>
             </div>
