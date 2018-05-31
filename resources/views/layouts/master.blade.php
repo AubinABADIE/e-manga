@@ -38,8 +38,8 @@ License: Creative Commons Attribution 3.0 Unported
                     <a href="/">E-Manga</a>
                 </div>
                 <div class="login-bars">
-                    <a class="btn btn-default log-bar" href="/auth/register" role="button">Sign up</a>
-                    <a class="btn btn-default log-bar" href="/auth/login" role="button">Login</a>
+                    <a class="btn btn-default log-bar" href="/register" role="button">Sign up</a>
+                    <a class="btn btn-default log-bar" href="/login" role="button">Login</a>
                     <div class="cart box_1">
                         <a href="checkout.html">
                         <h3>

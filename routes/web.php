@@ -20,3 +20,9 @@ Route::get('/manga/{id}', 'MangaController@show')->where('id', '[0-9]+');
 
 Route::get('/volumes', 'VolumeController@index');
 Route::get('/volume/{id}', 'VolumeController@show')->where('id', '[0-9]+');
+
+Route::get('/auth/login', 'VolumeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
