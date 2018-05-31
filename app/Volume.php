@@ -12,7 +12,7 @@ class Volume extends Model
     }
 
     public static function getVolumeByID($id){
-      return DB::table('volume')->find($id);;
+      return DB::table('volume')->where('volume_id',$id)->first();
     }
 
     public static function exists($id){

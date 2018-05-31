@@ -12,7 +12,7 @@ class Manga extends Model
     }
 
     public static function getMangaByID($id){
-      return DB::table('manga')->find($id);;
+      return DB::table('manga')->where('manga.manga_id', '=', $id)->first();
     }
 
     public static function getVolumesOfManga($id){

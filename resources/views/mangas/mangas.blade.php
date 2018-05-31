@@ -4,9 +4,9 @@
 
 @section('script')
   <!-- FlexSlider -->
-  <script src="js/imagezoom.js"></script>
-  <script defer src="js/jquery.flexslider.js"></script>
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <script src="{{ URL::asset('js/imagezoom.js') }}"></script>
+  <script defer src="{{ URL::asset('js/jquery.flexslider.js') }}"></script>
+  <link rel="stylesheet" href="{{ URL::asset('css/flexslider.css') }}" type="text/css" media="screen" />
 
   <script>
     // Can also be used with $(document).ready()

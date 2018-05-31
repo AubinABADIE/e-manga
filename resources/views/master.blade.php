@@ -17,15 +17,15 @@ License: Creative Commons Attribution 3.0 Unported
 
 		<!--fonts-->
 		<!--bootstrap-->
-			 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
 		<!--coustom css-->
-			<link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <!--shop-kart-js-->
-        <script src="js/simpleCart.min.js"></script>
+		<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
+    <!--shop-kart-js-->
+    <script src="{{ URL::asset('js/simpleCart.min.js') }}"></script>
 		<!--default-js-->
-			<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
 		<!--bootstrap-js-->
-			<script src="js/bootstrap.min.js"></script>
+		<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 		<!--script-->
       @section('script')
       @show

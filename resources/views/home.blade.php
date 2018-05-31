@@ -6,7 +6,13 @@
 @stop
 
 @section('body')
-
+<div class="head-bread">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="active">Home</a></li>
+    </ol>
+  </div>
+</div>
 <div class="header-end">
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">

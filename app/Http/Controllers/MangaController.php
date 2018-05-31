@@ -23,7 +23,7 @@ class MangaController extends Controller
 
       $manga = Manga::getMangaByID($id);
       $volumes = Manga::getVolumesOfManga($id);
-      return view('mangas/mangaPrewiew', compact('manga','volumes'));
+      return view('mangas/mangaPreview', compact('manga','volumes'));
 
     } else {
       abort('404');

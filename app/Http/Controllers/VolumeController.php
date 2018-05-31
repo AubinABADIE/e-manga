@@ -23,7 +23,7 @@ class VolumeController extends Controller
     if($exist){
 
       $volume = Volume::getVolumeByID($id);
-      return view('volumes/volumePrewiew', compact('volume'));
+      return view('volumes/volumePreview', compact('volume'));
 
     } else {
       abort('404');
