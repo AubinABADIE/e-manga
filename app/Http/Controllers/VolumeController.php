@@ -36,7 +36,7 @@ class VolumeController extends Controller
 
 
 
-  public function create(){
+  /*public function create(){
     return view('books/create');
   }
 
@@ -60,5 +60,5 @@ class VolumeController extends Controller
 
   public function update(){
       return redirect()->action('BooksController@index');
-  }
+  }*/
 }

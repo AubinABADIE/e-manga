@@ -112,7 +112,7 @@ License: Creative Commons Attribution 3.0 Unported
                     <li><a href="#">Delivery</a></li>
                     <li><a href="#">Return Policy</a></li>
                     <li><a href="#">Terms & conditions</a></li>
-                    <li><a href="contact.html">Sitemap</a></li>
+                    <li><a href="/contact">Sitemap</a></li>
                 </ul>
             </div>
             <div class="col-md-6 re-ft-grd">
