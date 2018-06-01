@@ -22,8 +22,12 @@ class MangaController extends Controller
     if($exist){
 
       $manga = Manga::getMangaByID($id);
+      $mangaka = Manga::getMangakaOfManga($id);
+      $publisher = Manga::getPublisherOfManga($id);
+      $type = Manga::getTypeOfManga($id);
+      $keywords = Manga::getKeywordsOfManga($id);
       $volumes = Manga::getVolumesOfManga($id);
-      return view('mangas/mangaPreview', compact('manga','volumes'));
+      return view('mangas/mangaPreview', compact('manga', 'mangaka', 'publisher', 'type', 'keywords','volumes'));
 
     } else {
       abort('404');
