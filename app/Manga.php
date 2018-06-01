@@ -9,7 +9,6 @@ class Manga extends Model
 {
     public static function getAllMangas(){
         return DB::table('manga')
-          ->orderBy('manga_title', 'asc')
           ->get();
     }
 
@@ -59,19 +58,19 @@ class Manga extends Model
     }
 
     public static function getTypes(){
-      return DB::table('manga')->where('manga.manga_id', '=', $id)
+      return DB::table('manga_type')
         ->orderBy('type_label', 'asc')
         ->get();
     }
 
     public static function getPublishers(){
-      return DB::table('manga')->where('manga.manga_id', '=', $id)
+      return DB::table('publisher')
         ->orderBy('publisher_name', 'asc')
         ->get();
     }
 
     public static function getKeywords(){
-      return DB::table('manga')->where('manga.manga_id', '=', $id)
+      return DB::table('keyword')
         ->orderBy('keyword_label', 'asc')
         ->get();
     }

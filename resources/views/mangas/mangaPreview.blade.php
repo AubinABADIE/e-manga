@@ -14,13 +14,12 @@
   </div>
   <div class="showcase-grid">
     <div class="container">
-        <div class="col-md-6 showcase">
-          <div class="flexslider">
-            <img src="images/<?php echo $manga->manga_title ?>.jpg" data-imagezoom="true" class="img-responsive">
-            <div class="clearfix"></div>
+        <div class="col-md-4 showcase">
+          <div class="img">
+            <img src="../images/<?php echo $manga->manga_title ?>.png" alt="/" data-imagezoom="true" class="img-responsive gri-wid">
           </div>
         </div>
-      <div class="col-md-6 showcase">
+      <div class="col-md-8 showcase">
         <div class="showcase-rt-top">
           <div class="pull-left shoe-name">
               <h3><?php echo $manga->manga_title ?></h3>
@@ -52,7 +51,9 @@
 				<!-- normal -->
 				<div class="ih-item square effect3 bottom_to_top">
 				  <div class="bottom-2-top">
-					<div class="img"><img src="images/grid4.jpg" alt="/" class="img-responsive gri-wid"></div>
+					<div class="img">
+            <img src="../images/<?php echo $manga->manga_title ?>.png" alt="/" data-imagezoom="true" class="img-responsive gri-wid">
+          </div>
 					<div class="info">
 					  <div class="pull-center styl-hdn">
 						<h3>Vol. <?php echo $volume->volume_number;?></h3>

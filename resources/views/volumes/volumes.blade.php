@@ -19,10 +19,10 @@
             <!-- normal -->
             <div class="ih-item square effect3 bottom_to_top">
               <div class="bottom-2-top">
-                <div class="img"><img src="images/grid4.jpg" alt="/" class="img-responsive gri-wid"></div>
+                <div class="img"><img src="images/<?php echo $volume->manga_title ?>.png" alt="/" class="img-responsive gri-wid"></div>
                 <div class="info">
                   <div class="pull-center styl-hdn">
-                    <h3>Vol. <?php echo $volume->volume_number;?></h3>
+                    <h3><?php echo $volume->manga_title . ' Vol. ' . $volume->volume_number;?></h3>
                   </div>
                   <div class="clearfix"></div>
                 </div>

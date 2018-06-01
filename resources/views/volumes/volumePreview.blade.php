@@ -15,23 +15,9 @@
   <div class="showcase-grid">
     <div class="container">
         <div class="col-md-8 showcase">
-            <div class="flexslider">
-                  <ul class="slides">
-                    <li data-thumb="images/show.jpg">
-                        <div class="thumb-image"> <img src="images/show.jpg" data-imagezoom="true" class="img-responsive"> </div>
-                    </li>
-                    <li data-thumb="images/show1.jpg">
-                         <div class="thumb-image"> <img src="images/show1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-                    </li>
-                    <li data-thumb="images/show2.jpg">
-                       <div class="thumb-image"> <img src="images/show2.jpg" data-imagezoom="true" class="img-responsive"> </div>
-                    </li>
-                    <li data-thumb="images/show3.jpg">
-                       <div class="thumb-image"> <img src="images/show3.jpg" data-imagezoom="true" class="img-responsive"> </div>
-                    </li>
-                  </ul>
-                <div class="clearfix"></div>
-            </div>
+          <div class="img">
+            <img src="../../../images/<?php echo $manga->manga_title ?>.png" alt="/" data-imagezoom="true" class="img-responsive gri-wid">
+          </div>
         </div>
         <div class="col-md-4 showcase">
             <div class="showcase-rt-top">
