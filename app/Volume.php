@@ -12,10 +12,17 @@ class Volume extends Model
     }
 
     public static function getVolumeByID($id){
-      return DB::table('volume')->where('volume_id',$id)->first();
+      return DB::table('volume')->where('volume_isbn',$id)->first();
+    }
+
+    public static function getVolumeOfManga($id, $id2){
+      return DB::table('manga')->where('manga.manga_id', '=', $id)
+        ->join('volume','volume.manga_id','=','manga.manga_id')
+        ->where('volume.volume_isbn', '=', $id2)
+        ->first();
     }
 
     public static function exists($id){
-      return DB::table('volume')->where('volume_id',$id)->exists();
+      return DB::table('volume')->where('volume_isbn',$id)->exists();
     }
 }

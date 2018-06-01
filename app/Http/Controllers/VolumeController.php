@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Volume;
+use App\Manga;
 use DB;
 
 class VolumeController extends Controller
@@ -15,20 +16,25 @@ class VolumeController extends Controller
     return view('volumes/volumes', compact('volumes'));
 
   }
+  public function show($id, $id2){
 
-  public function show($id){
+    $exist = Manga::exists($id);
+    $exist2 = Volume::exists($id2);
 
-    $exist = Volume::exists($id);
+    if($exist && $exist2){
 
-    if($exist){
-
-      $volume = Volume::getVolumeByID($id);
-      return view('volumes/volumePreview', compact('volume'));
+      $manga = Manga::getMangaByID($id);
+      $volume = Volume::getVolumeOfManga($id, $id2);
+      return view('volumes/volumePreview', compact('manga','volume'));
 
     } else {
       abort('404');
     }
   }
+
+
+
+
 
   public function create(){
     return view('books/create');

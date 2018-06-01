@@ -27,8 +27,21 @@ License: Creative Commons Attribution 3.0 Unported
 		<!--bootstrap-js-->
 		<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 		<!--script-->
-      @section('script')
-      @show
+
+    <!-- FlexSlider -->
+    <script src="{{ URL::asset('js/imagezoom.js') }}"></script>
+    <script defer src="{{ URL::asset('js/jquery.flexslider.js') }}"></script>
+    <link rel="stylesheet" href="{{ URL::asset('css/flexslider.css') }}" type="text/css" media="screen" />
+    <script>
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+          $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+          });
+      });
+    </script>
+    <!-- //FlexSlider-->
 </head>
 <body>
     <div class="header">
@@ -38,8 +51,8 @@ License: Creative Commons Attribution 3.0 Unported
                     <a href="/">E-Manga</a>
                 </div>
                 <div class="login-bars">
-                    <a class="btn btn-default log-bar" href="/register" role="button">Sign up</a>
-                    <a class="btn btn-default log-bar" href="/login" role="button">Login</a>
+                  @component('components.user')
+                  @endcomponent
                     <div class="cart box_1">
                         <a href="checkout.html">
                         <h3>

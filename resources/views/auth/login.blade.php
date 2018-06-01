@@ -24,7 +24,7 @@
   <div class="head-bread">
     <div class="container">
         <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li class="active">Login</li>
         </ol>
     </div>
