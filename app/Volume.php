@@ -14,7 +14,7 @@ class Volume extends Model
     public static function getVolumeByID($id){
       return DB::table('volume')
         ->where('volume_isbn',$id)
-        ->get();
+        ->first();
     }
 
     public static function getVolumeOfManga($id, $id2){
@@ -22,7 +22,7 @@ class Volume extends Model
         ->where('manga.manga_id', '=', $id)
         ->join('volume','volume.manga_id','=','manga.manga_id')
         ->where('volume.volume_isbn', '=', $id2)
-        ->get();
+        ->first();
     }
 
     public static function exists($id){

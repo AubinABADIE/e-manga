@@ -14,34 +14,11 @@ License: Creative Commons Attribution 3.0 Unported
 		<meta charset utf="8">
 		<!--fonts-->
 		<link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-
-		<!--fonts-->
 		<!--bootstrap-->
-    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
 		<!--coustom css-->
-		<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
-    <!--shop-kart-js-->
-    <script src="{{ URL::asset('js/simpleCart.min.js') }}"></script>
-		<!--default-js-->
-		<script src="{{ URL::asset('js/jquery-2.1.4.min.js') }}"></script>
-		<!--bootstrap-js-->
-		<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
-		<!--script-->
-
-    <!-- FlexSlider -->
-    <script src="{{ URL::asset('js/imagezoom.js') }}"></script>
-    <script defer src="{{ URL::asset('js/jquery.flexslider.js') }}"></script>
-    <link rel="stylesheet" href="{{ URL::asset('css/flexslider.css') }}" type="text/css" media="screen" />
-    <script>
-      // Can also be used with $(document).ready()
-      $(window).load(function() {
-          $('.flexslider').flexslider({
-          animation: "slide",
-          controlNav: "thumbnails"
-          });
-      });
-    </script>
-    <!-- //FlexSlider-->
+		<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div class="header">
@@ -73,12 +50,9 @@ License: Creative Commons Attribution 3.0 Unported
                 <nav class="navbar navbar-default nav-menu" role="navigation">
                     <div class="collapse navbar-collapse collapse-pdng" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav nav-font">
-                            <li>
-                                <a href="/mangas">Mangas</a>
-                            </li>
-                            <li>
-                                <a href="/volumes">Volumes</a>
-                            </li>
+                            <li><a href="/mangas">Mangas</a></li>
+                            <li><a href="/volumes">Volumes</a></li>
+                            <li><a href="/cart">Cart</a></li>
                             <li><a href="/contact">Contact</a></li>
                             <div class="clearfix"></div>
                         </ul>
@@ -104,6 +78,7 @@ License: Creative Commons Attribution 3.0 Unported
                 <ul class="categories">
                     <li><a href="/mangas">Mangas</a></li>
                     <li><a href="/volumes">Volumes</a></li>
+                    <li><a href="/cart">Cart</a></li>
                 </ul>
             </div>
             <div class="col-md-2 re-ft-grd">
@@ -140,5 +115,28 @@ License: Creative Commons Attribution 3.0 Unported
             </div>
         </div>
     </div>
+
+    <!--script-->
+    <!--shop-kart-js-->
+    <script src="{{ asset('js/simpleCart.min.js') }}"></script>
+		<!--default-js-->
+		<script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+		<!--bootstrap-js-->
+		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <!-- FlexSlider -->
+    <script src="{{ asset('js/imagezoom.js') }}"></script>
+    <script defer src="{{ asset('js/jquery.flexslider.js') }}"></script>
+    <script>
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+          $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+          });
+      });
+    </script>
+    <!-- //FlexSlider-->
+		<!--script-->
+
 </body>
 </html>

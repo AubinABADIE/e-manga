@@ -8,7 +8,9 @@ use DB;
 class Manga extends Model
 {
     public static function getAllMangas(){
-        return DB::table('manga')->get();
+        return DB::table('manga')
+          ->orderBy('manga_title', 'asc')
+          ->get();
     }
 
     public static function getMangaByID($id){
@@ -53,6 +55,24 @@ class Manga extends Model
     public static function getVolumesOfManga($id){
       return DB::table('manga')->where('manga.manga_id', '=', $id)
         ->join('volume','volume.manga_id','=','manga.manga_id')
+        ->get();
+    }
+
+    public static function getTypes(){
+      return DB::table('manga')->where('manga.manga_id', '=', $id)
+        ->orderBy('type_label', 'asc')
+        ->get();
+    }
+
+    public static function getPublishers(){
+      return DB::table('manga')->where('manga.manga_id', '=', $id)
+        ->orderBy('publisher_name', 'asc')
+        ->get();
+    }
+
+    public static function getKeywords(){
+      return DB::table('manga')->where('manga.manga_id', '=', $id)
+        ->orderBy('keyword_label', 'asc')
         ->get();
     }
 

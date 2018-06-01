@@ -29,23 +29,20 @@
         <div class="clearfix"></div>
         </div>
         <div class="showcase-last">
-            <h3>Résumé</h3>
+            <h3>Description</h3>
             <p><?php echo $manga->manga_description ?></p>
+        </div>
+        <div class="showcase-last">
+          <h3>Item Details</h3>
+          <p><b>Publisher : </b><span><?php echo $publisher->publisher_name ?></span></p>
+          <p><b>Date de publication : </b><span><?php echo $manga->manga_release_date ?></span></p>
+          <p><b>Type : </b><span><?php echo $type->type_label ?></span></p>
+          <p><b>Catégorie : </b><span><?php foreach ($keywords as $keyword) { echo $keyword->keyword_label . ', '; } ?></span></p>
         </div>
       </div>
       <div class="clearfix"></div>
     </div>
   </div>
-  <div class="specifications">
-    <div class="container">
-      <h3>Item Details</h3>
-      <p><b>Publisher : </b><span><?php echo $publisher->publisher_name ?></span></p>
-      <p><b>Date de publication : </b><span><?php echo $manga->manga_release_date ?></span></p>
-      <p><b>Type : </b><span><?php echo $type->type_label ?></span></p>
-      <p><b>Catégorie : </b><span><?php foreach ($keywords as $keyword) { echo $keyword->keyword_label . ', '; } ?></span></p>
-    </div>
-  </div>
-
   <div class="products-gallery specifications">
 		<div class="container">
   	  <h3>Volumes</h3>
