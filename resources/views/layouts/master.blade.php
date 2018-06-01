@@ -54,10 +54,12 @@ License: Creative Commons Attribution 3.0 Unported
                   @component('components.user')
                   @endcomponent
                     <div class="cart box_1">
-                        <a href="checkout.html">
-                        <h3>
+                        <a href="/cart">
+                          <h3>
                             <div class="total">
-<span class="simpleCart_total"></span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div></h3>
+                              <span class="simpleCart_total"></span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)
+                            </div>
+                          </h3>
                         </a>
                         <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
                         <div class="clearfix"> </div>
