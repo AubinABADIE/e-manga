@@ -19,9 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/users/logout', 'Auth\LoginController@logout');
-Route::get('/login', function () {
-    return view('login');
-});
 
 Route::get('/mangas', 'MangaController@index');
 Route::get('/manga/{id}', 'MangaController@show')->where('id', '[0-9]+');
