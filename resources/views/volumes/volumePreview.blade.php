@@ -21,11 +21,9 @@
         </div>
         <div class="col-md-4 showcase simpleCart_shelfItem">
             <div class="showcase-rt-top">
-                <div class="pull-left shoe-name">
-                    <div class="item_name">
-                        <h3><?php echo $volume->volume_title;?></h3>
-                        <p>Vol. <?php echo $volume->volume_number;?></p>
-                    </div>
+                <<div class="pull-left shoe-name">
+                    <h3><?php echo $volume->volume_title;?></h3>
+                    <p class="item_name"><?php echo $manga->manga_title ?> - Vol. <?php echo $volume->volume_number;?></p>
                     <h4><span class="item_price">&#36;<?php echo $volume->volume_price;?></span></h4>
                 </div>
                 <div class="clearfix"></div>
