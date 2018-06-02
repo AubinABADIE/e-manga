@@ -24,7 +24,7 @@
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <a href="/manga/5/volume/978-2-7234-4904-5">
-                <img src="/images/Berserk.png" alt="..." class="img-responsive">
+                <img src="{{ secure_asset('images/Berserk.png') }}" alt="..." class="img-responsive">
                 <div class="carousel-caption car-re-posn">
                     <h3>Berserk</h3>
                     <h4>Vol. 5</h4>
@@ -34,7 +34,7 @@
             </div>
             <div class="item">
               <a href="/manga/11/volume/978-2-7234-5584-8">
-                <img src="/images/D.Gray-Man.png" alt="..." class="img-responsive">
+                <img src="{{ secure_asset('images/D.Gray-Man.png') }}" alt="..." class="img-responsive">
                 <div class="carousel-caption car-re-posn">
                     <h3>D.Gray-man</h3>
                     <h4>Vol. 1</h4>
@@ -44,7 +44,7 @@
             </div>
             <div class="item">
               <a href="/manga/1/volume/978-2-7234-3431-7">
-                <img src="/images/One Piece.png" alt="..." class="img-responsive">
+                <img src="{{ secure_asset('images/One Piece.png') }}" alt="..." class="img-responsive">
                 <div class="carousel-caption car-re-posn">
                     <h3>One Piece</h3>
                     <h4>Vol. 2</h4>

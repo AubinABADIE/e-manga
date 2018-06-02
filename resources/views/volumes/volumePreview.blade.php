@@ -16,7 +16,7 @@
     <div class="container">
         <div class="col-md-8 showcase">
           <div class="img">
-            <img src="../../../images/<?php echo $manga->manga_title ?>.png" alt="/" data-imagezoom="true" class="img-responsive gri-wid">
+            <img src="{{ secure_asset('images/<?php echo $manga->manga_title;?>.png') }}" alt="/" data-imagezoom="true" class="img-responsive gri-wid">
           </div>
         </div>
         <div class="col-md-4 showcase simpleCart_shelfItem">

@@ -2,24 +2,6 @@
 
 @section('title', 'Register')
 
-@section('script')
-  <!-- FlexSlider -->
-  <script src="{{ URL::asset('js/imagezoom.js') }}"></script>
-  <script defer src="{{ URL::asset('js/jquery.flexslider.js') }}"></script>
-  <link rel="stylesheet" href="{{ URL::asset('css/flexslider.css') }}" type="text/css" media="screen" />
-
-  <script>
-    // Can also be used with $(document).ready()
-    $(window).load(function() {
-        $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: "thumbnails"
-        });
-    });
-  </script>
-  <!-- //FlexSlider-->
-@stop
-
 @section('body')
   <div class="head-bread">
     <div class="container">
