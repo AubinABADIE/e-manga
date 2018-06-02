@@ -73,7 +73,7 @@
           <div class=" fall-left">
             <h3>Mangas</h3>
             <span class="fel-fal-bar"></span>
-            <p>are offered on this website, along with various information about them, for a single purpose: allow you to find your happiness!</p>
+            <p>are displayed on this website, with a few informations about them, for a single purpose: allow yourselves to find happiness!</p>
           </div>
         </div>
         <div class="pull-right fel-box">

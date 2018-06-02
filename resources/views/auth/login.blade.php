@@ -56,7 +56,7 @@
                       </span>
                   @endif
                   <button type="submit" class="btn btn-primary">Login</button>
-                  <a class="btn btn-link" href="{{ route('password.request') }}">Forgot your password?</a>
+                  <a class="btn btn-link" href="#">Forgot your password?</a>
                 </form>
             </div>
             <div class="col-md-6 login-right">

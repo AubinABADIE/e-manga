@@ -19,6 +19,27 @@ License: Creative Commons Attribution 3.0 Unported
     <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" />
 		<!--coustom css-->
 		<link href="/css/style.css" rel="stylesheet" type="text/css"/>
+    <!--script-->
+    <!--shop-kart-js-->
+    <script src="/js/simpleCart.min.js"></script>
+		<!--default-js-->
+		<script src="/js/jquery-2.1.4.min.js"></script>
+		<!--bootstrap-js-->
+		<script src="/js/bootstrap.min.js"></script>
+    <!-- FlexSlider -->
+    <script src="/js/imagezoom.js"></script>
+    <script defer src="/js/jquery.flexslider.js"></script>
+    <script>
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+          $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+          });
+      });
+    </script>
+    <!-- //FlexSlider-->
+		<!--script-->
 </head>
 <body>
     <div class="header">
@@ -97,15 +118,14 @@ License: Creative Commons Attribution 3.0 Unported
                 <ul class="social">
                     <li><a href="#" class="fb">facebook</a></li>
                     <li><a href="#" class="twt">twitter</a></li>
+                    <li><a href="#" class="gpls">google+</a></li>
                     <div class="clearfix"></div>
                 </ul>
             </div>
             <div class="col-md-2 re-ft-grd">
-                <div class="bt-logo">
-                    <div class="logo">
-                        <a href="/" class="ft-log">Logo</a>
-                    </div>
-                </div>
+                <a href="/" class="ft-log">
+                  <img src="/images/logo.png" alt="/" class="img-responsive">
+                </a>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -115,28 +135,5 @@ License: Creative Commons Attribution 3.0 Unported
             </div>
         </div>
     </div>
-
-    <!--script-->
-    <!--shop-kart-js-->
-    <script src="/js/simpleCart.min.js"></script>
-		<!--default-js-->
-		<script src="/js/jquery-2.1.4.min.js"></script>
-		<!--bootstrap-js-->
-		<script src="/js/bootstrap.min.js"></script>
-    <!-- FlexSlider -->
-    <script src="/js/imagezoom.js"></script>
-    <script defer src="/js/jquery.flexslider.js"></script>
-    <script>
-      // Can also be used with $(document).ready()
-      $(window).load(function() {
-          $('.flexslider').flexslider({
-          animation: "slide",
-          controlNav: "thumbnails"
-          });
-      });
-    </script>
-    <!-- //FlexSlider-->
-		<!--script-->
-
 </body>
 </html>
