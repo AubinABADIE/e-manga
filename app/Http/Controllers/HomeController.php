@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $recent = Volume::
+      
       return view('home', compact('recent'));
     }
 }
