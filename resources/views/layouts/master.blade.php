@@ -124,7 +124,8 @@ License: Creative Commons Attribution 3.0 Unported
             </div>
             <div class="col-md-2 re-ft-grd">
                 <a href="/" class="ft-log">
-                  <img src="{{ secure_asset('images/logo.png') }}" alt="/" class="img-responsive">
+                  <img src="/images/logo.png" alt="/" class="img-responsive">
+                  {{ secure_asset('images/<?php echo $manga->manga_title;?>.png') }}
                 </a>
             </div>
             <div class="clearfix"></div>
