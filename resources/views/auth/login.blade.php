@@ -21,7 +21,7 @@
                 <div class="strip"></div>
                 <p>Welcome, please enter the following to continue.</p>
                 <p>If you have previously Login with us, <a href="/">Click Here</a></p>
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="/login">
                   @csrf
                   <h5>Email:</h5>
                   <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
