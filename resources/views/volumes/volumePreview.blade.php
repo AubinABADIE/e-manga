@@ -19,12 +19,14 @@
             <img src="../../../images/<?php echo $manga->manga_title ?>.png" alt="/" data-imagezoom="true" class="img-responsive gri-wid">
           </div>
         </div>
-        <div class="col-md-4 showcase">
+        <div class="col-md-4 showcase simpleCart_shelfItem">
             <div class="showcase-rt-top">
                 <div class="pull-left shoe-name">
-                    <h3><?php echo $volume->volume_title;?></h3>
-                    <p>Vol. <?php echo $volume->volume_number;?></p>
-                    <h4>&#36;<?php echo $volume->volume_price;?></h4>
+                    <div class="item_name">
+                        <h3><?php echo $volume->volume_title;?></h3>
+                        <p>Vol. <?php echo $volume->volume_number;?></p>
+                    </div>
+                    <h4><span class="item_price">&#36;<?php echo $volume->volume_price;?></span></h4>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -34,7 +36,7 @@
                 <ul>
                     <li class="qty">
                         <h4>QTY</h4>
-                        <select class="form-control qnty-chrt">
+                        <select class="form-control qnty-chrt item_Quantity">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -48,7 +50,7 @@
                 <div class="clearfix"></div>
                 </div>
                 <ul>
-                    <li class="ad-2-crt simpleCart_shelfItem">
+                    <li class="ad-2-crt">
                         <a class="btn item_add" href="#" role="button">Add To Cart</a>
                         <a class="btn" href="#" role="button">Buy Now</a>
                     </li>

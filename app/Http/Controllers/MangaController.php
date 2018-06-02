@@ -36,4 +36,37 @@ class MangaController extends Controller
       abort('404');
     }
   }
+
+  public function create(){
+    return view('manga/create');
+  }
+
+  public function store(){
+    $this->validate(request(),[
+      'manga_title' => 'required|max:50',
+      'manga_description' => 'required|max:1000',
+    	'manga_release_date',
+    	'mangaka_id' => 'required',
+      'type_id' => 'required',
+    	'publisher_id' => 'required'
+    ]);
+    $id = DB::table('manga')->insertGetId([
+        'manga_title' => request('manga_title'),
+        'manga_description' => request('manga_descriptionmanga_description'),
+        'manga_release_date' => request('manga_release_date'),
+        'mangaka_id' => request('mangaka_id'),
+        'type_id' => request('type_id'),
+        'publisher_id' => request('publisher_id')
+      ]);
+    return redirect()->action('MangaController@show',['id' => $id]);
+  }
+
+  public function delete($id){
+    DB::table('manga')->where('id', '=', $id)->delete();
+    return redirect()->action('MangaController@index');
+  }
+
+  public function update(){
+      return redirect()->action('MangaController@index');
+  }
 }

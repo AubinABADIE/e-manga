@@ -23,28 +23,34 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="./images/shoe3.jpg" alt="...">
+              <a href="/manga/5/volume/978-2-7234-4904-5">
+                <img src="/images/Berserk.png" alt="..." class="img-responsive">
                 <div class="carousel-caption car-re-posn">
-                    <h3>Title</h3>
-                    <h4>Vol. 00</h4>
+                    <h3>Berserk</h3>
+                    <h4>Vol. 5</h4>
                     <span class="color-bar"></span>
                 </div>
+              </a>
             </div>
             <div class="item">
-              <img src="./images/shoe1.jpg" alt="...">
+              <a href="/manga/11/volume/978-2-7234-5584-8">
+                <img src="/images/D.Gray-Man.png" alt="..." class="img-responsive">
                 <div class="carousel-caption car-re-posn">
-                    <h3>Title</h3>
-                    <h4>Vol. 00</h4>
+                    <h3>D.Gray-man</h3>
+                    <h4>Vol. 1</h4>
                     <span class="color-bar"></span>
                 </div>
+              </a>
             </div>
             <div class="item">
-              <img src="./images/shoe2.jpg" alt="...">
+              <a href="/manga/1/volume/978-2-7234-3431-7">
+                <img src="/images/One Piece.png" alt="..." class="img-responsive">
                 <div class="carousel-caption car-re-posn">
-                    <h3>Title</h3>
-                    <h4>Vol. 00</h4>
+                    <h3>One Piece</h3>
+                    <h4>Vol. 2</h4>
                     <span class="color-bar"></span>
                 </div>
+              </a>
             </div>
           </div>
 
@@ -67,15 +73,14 @@
           <div class=" fall-left">
             <h3>Mangas</h3>
             <span class="fel-fal-bar"></span>
-            <p>Les mangas nous permettent de proposer plus de details sur les oeuvres, les mangakas, etc ... en plus de fournir et donc trier les volumes qui
-            lui sont associés</p>
+            <p>are offered on this website, along with various information about them, for a single purpose: allow you to find your happiness!</p>
           </div>
         </div>
         <div class="pull-right fel-box">
           <div class="feel-right">
             <h3>Volumes</h3>
             <span class="fel-fal-bar2"></span>
-            <p>Les volumes sont les seuls produits achetables du site.</p>
+            <p>are the purchasable products of this website, make your choice and add it to your cart!</p>
           </div>
         </div>
         <div class="clearfix"></div>

@@ -33,33 +33,38 @@ class VolumeController extends Controller
     }
   }
 
-
-
-
-
-  /*public function create(){
-    return view('books/create');
+  public function create(){
+    return view('volume/create');
   }
 
   public function store(){
     $this->validate(request(),[
-      'titre' => 'required|max:50',
-      'auteur' => 'required',
-      'isbn' =>'max:500',
-      'synopsis' =>'required|max:500',
+      'volume_isbn' => 'required|max:17',
+      'volume_title' => 'required|max:50',
+      'volume_number' => 'required',
+	    'volume_synopsis' => 'required|max:1200',
+    	'volume_publish_date',
+    	'volume_price' => 'required',
+    	'manga_id' => 'required'
     ]);
-    $id = DB::table('livre')->insertGetId(
-        ['titre' => request('titre'), 'auteur' => request('auteur'), 'isbn' => request('isbn'),'synopsis' => request('synopsis') ]);
-    return redirect()->action('BooksController@show',['id' => $id]);
-    //create a new book using request data, save it to db, redirect
+    $id = DB::table('volume')->insertGetId([
+        'volume_isbn' => request('volume_isbn'),
+        'volume_title' => request('volume_title'),
+        'volume_number' => request('volume_number'),
+        'volume_synopsis' => request('volume_synopsis'),
+        'volume_publish_date' => request('volume_publish_date'),
+        'volume_price' => request('volume_price'),
+        'manga_id' => request('manga_id')
+      ]);
+    return redirect()->action('VolumeController@show',['id' => $id]);
   }
 
   public function delete($id){
-    DB::table('livre')->where('id', '=', $id)->delete();
-    return redirect()->action('BooksController@index');
+    DB::table('volume')->where('id', '=', $id)->delete();
+    return redirect()->action('VolumeController@index');
   }
 
   public function update(){
-      return redirect()->action('BooksController@index');
-  }*/
+      return redirect()->action('VolumeController@index');
+  }
 }
