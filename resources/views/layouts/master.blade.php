@@ -15,10 +15,10 @@ License: Creative Commons Attribution 3.0 Unported
 		<!--fonts-->
 		<link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 		<!--bootstrap-->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" />
 		<!--coustom css-->
-		<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
+		<link href="/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div class="header">
@@ -118,14 +118,14 @@ License: Creative Commons Attribution 3.0 Unported
 
     <!--script-->
     <!--shop-kart-js-->
-    <script src="{{ asset('js/simpleCart.min.js') }}"></script>
+    <script src="/js/simpleCart.min.js"></script>
 		<!--default-js-->
-		<script src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+		<script src="/js/jquery-2.1.4.min.js"></script>
 		<!--bootstrap-js-->
-		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<script src="/js/bootstrap.min.js"></script>
     <!-- FlexSlider -->
-    <script src="{{ asset('js/imagezoom.js') }}"></script>
-    <script defer src="{{ asset('js/jquery.flexslider.js') }}"></script>
+    <script src="/js/imagezoom.js"></script>
+    <script defer src="/js/jquery.flexslider.js"></script>
     <script>
       // Can also be used with $(document).ready()
       $(window).load(function() {

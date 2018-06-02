@@ -60,5 +60,25 @@
         </div>
         <div class="clearfix"></div>
       </div>
-  </div>
+    </div>
+    <div class="feel-fall">
+      <div class="container">
+        <div class="pull-left fal-box">
+          <div class=" fall-left">
+            <h3>Mangas</h3>
+            <span class="fel-fal-bar"></span>
+            <p>Les mangas nous permettent de proposer plus de details sur les oeuvres, les mangakas, etc ... en plus de fournir et donc trier les volumes qui
+            lui sont associés</p>
+          </div>
+        </div>
+        <div class="pull-right fel-box">
+          <div class="feel-right">
+            <h3>Volumes</h3>
+            <span class="fel-fal-bar2"></span>
+            <p>Les volumes sont les seuls produits achetables du site.</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
 @endsection

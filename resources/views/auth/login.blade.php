@@ -55,8 +55,6 @@
                           <strong>{{ $errors->first('password') }}</strong>
                       </span>
                   @endif
-                  <label><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>Remember Me</label>
-                  <br>
                   <button type="submit" class="btn btn-primary">Login</button>
                   <a class="btn btn-link" href="{{ route('password.request') }}">Forgot your password?</a>
                 </form>
