@@ -21,7 +21,7 @@ License: Creative Commons Attribution 3.0 Unported
 		<link href="{{ secure_asset('css/style.css') }}" rel="stylesheet" type="text/css"/>
     <!--script-->
     <!--shop-kart-js-->
-    <script src="{{ secure_asset('js/simpleCart.min.js') }}"></script>
+    <script src="{{ secure_asset('js/simpleCart.js') }}"></script>
 		<!--default-js-->
 		<script src="{{ secure_asset('js/jquery-2.1.4.min.js') }}"></script>
 		<!--bootstrap-js-->
