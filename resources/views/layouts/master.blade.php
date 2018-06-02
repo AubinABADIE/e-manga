@@ -124,14 +124,14 @@ License: Creative Commons Attribution 3.0 Unported
             </div>
             <div class="col-md-2 re-ft-grd">
                 <a href="/" class="ft-log">
-                  <img src="/images/logo.png" alt="/" class="img-responsive">
+                  <img src="{{ secure_asset('images/logo.png') }}" alt="/" class="img-responsive">
                 </a>
             </div>
             <div class="clearfix"></div>
         </div>
         <div class="copy-rt">
             <div class="container">
-                <p>&copy;   2018 E-Manga All Rights Reserved. Design by <a href="http://www.w3layouts.com">w3layouts</a></p>
+                <p>&copy;   2018 E-Manga All Rights Reserved. Design by <a href="https://www.w3layouts.com">w3layouts</a></p>
             </div>
         </div>
     </div>
