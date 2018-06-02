@@ -13,7 +13,7 @@ License: Creative Commons Attribution 3.0 Unported
 		<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<meta charset utf="8">
 		<!--fonts-->
-		<link href='//fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 		<!--bootstrap-->
     <link href="{{ secure_asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ secure_asset('css/flexslider.css') }}" rel="stylesheet" type="text/css" media="screen" />
