@@ -18,7 +18,7 @@
               <h3>Register Now</h3>
               <p>Welcome, please enter the following details to continue.</p>
               <p>If you have previously registered with us, <a href="/login">click here</a></p>
-                  <form method="POST" action="{{ route('register') }}">
+                  <form method="POST" action="https://e-manga.herokuapp.com/login">
                   @csrf
                   <ul>
                       <li class="text-info">Pseudo: </li>
