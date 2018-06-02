@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-      
-      return view('home', compact('recent'));
+      $recents = Volume::getRecentVolumes();
+      return view('home', compact('recents'));
     }
 }

@@ -31,7 +31,7 @@ class Volume extends Model
       return DB::table('volume')
         ->where('volume.volume_publish_date', '>', 'CURRENT_DATE()')
         ->join('volume','volume.manga_id','=','manga.manga_id')
-        ->get();
+        ->get(3);
     }
 
     public static function exists($id){

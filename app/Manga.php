@@ -12,6 +12,12 @@ class Manga extends Model
           ->get();
     }
 
+    public static function getAllMangasSorted(){
+        return DB::table('manga')
+          ->orderBy('manga_title', 'asc')
+          ->get();
+    }
+
     public static function getMangaByID($id){
       return DB::table('manga')
         ->where('manga.manga_id', '=', $id)

@@ -38,45 +38,49 @@
         <?php } ?>
       </div>
       <div class="col-md-3 grid-details">
-      <div class="grid-addon">
-        <section  class="sky-form">
-          <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categories</h4>
-          <div class="row row1 scroll-pane">
-            <div class="col col-4">
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Action</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Adventure</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Horror</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fantasy</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Romance</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sports</label>
+        <div class="grid-addon">
+          <section  class="sky-form">
+            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Type</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <?php foreach ($types as $type) { ?>
+                  <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><?php echo $type->type_label;?></label>
+                <?php } ?>
+              </div>
             </div>
-          </div>
-        </section>
-        <section  class="sky-form">
-          <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Type</h4>
-          <div class="row row1 scroll-pane">
-            <div class="col col-4">
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Seinen</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Shonen</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Shojo</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Josei</label>
+          </section>
+          <section  class="sky-form">
+            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Publisher</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <?php foreach ($publishers as $publisher) { ?>
+                  <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><?php echo $publisher->publisher_name;?></label>
+                <?php } ?>
+              </div>
             </div>
-          </div>
-        </section>
-        <section  class="sky-form">
-          <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Tri</h4>
-          <div class="row row1 scroll-pane">
-            <div class="col col-4">
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>A - Z</label>
-              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Z - A</label>
+          </section>
+          <section  class="sky-form">
+            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categories</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <?php foreach ($keywords as $keyword) { ?>
+                  <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><?php echo $keyword->keyword_label;?></label>
+                <?php } ?>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section  class="sky-form">
+            <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Tri</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>A - Z</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Z - A</label>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       <div class="clearfix"></div>
-
     </div>
-
   </div>
 @stop

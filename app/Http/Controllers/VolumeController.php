@@ -13,7 +13,8 @@ class VolumeController extends Controller
   public function index(){
 
     $volumes = Volume::getAllVolumes();
-    return view('volumes/volumes', compact('volumes'));
+    $mangas = Manga::getAllMangasSorted();
+    return view('volumes/volumes', compact('volumes', 'mangas'));
 
   }
   public function show($id, $id2){

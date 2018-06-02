@@ -11,10 +11,10 @@ class MangaController extends Controller
   public function index(){
 
     $mangas = Manga::getAllMangas();
-    $t = Manga::getTypes();
-    $p = Manga::getPublishers();
-    $k = Manga::getKeywords();
-    return view('mangas/mangas', compact('mangas', 't', 'p', 'k'));
+    $types = Manga::getTypes();
+    $publishers = Manga::getPublishers();
+    $keywords = Manga::getKeywords();
+    return view('mangas/mangas', compact('mangas', 'types', 'publishers', 'keywords'));
 
   }
 
