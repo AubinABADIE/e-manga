@@ -213,7 +213,7 @@ a.left.carousel-control,a.right.carousel-control {
     padding: 0%;
     margin: 0%;
     z-index: 99;
-    left: 55%;
+    left: 20%;
     right: 0%;
 }
 .car-re-posn h3{
@@ -246,7 +246,7 @@ span.color-bar{
     background: linear-gradient(to right,  #8cf2b5 0%,#8cf2b5 26%,#80ecc0 35%,#80ecc0 35%,#69dfd8 68%,#50d2f0 99%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cf2b5', endColorstr='#50d2f0',GradientType=1 ); /* IE6-9 */
     display: block;
-    width: 50%;
+    width: 75%;
     height: 2px;
     z-index: 999;
     margin-left: 132px;
